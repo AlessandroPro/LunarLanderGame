@@ -64,3 +64,10 @@ The player will be awarded the points associated with a platform if:
 note: The player can till be awarded points even after their fuel runs out, if they are lucky enough to 
 have the lander fall on a platform successfully. 
 If this happens, they will get the points but the game will end (since they have no more fuel).
+
+![Screenshot1](https://user-images.githubusercontent.com/15040875/72311665-7026d500-3653-11ea-9cbc-8c8350faa451.PNG)
+![Screenshot2](https://user-images.githubusercontent.com/15040875/72311666-7026d500-3653-11ea-962f-a36232fca539.PNG)
+![Screenshot3](https://user-images.githubusercontent.com/15040875/72311667-7026d500-3653-11ea-90f2-2cfe4b3c39be.PNG)
+![Screenshot4](https://user-images.githubusercontent.com/15040875/72311668-7026d500-3653-11ea-8ad2-a8718020683b.PNG)
+![Screenshot5](https://user-images.githubusercontent.com/15040875/72311669-70bf6b80-3653-11ea-8c18-408f335b35d1.PNG)
+
