@@ -1,38 +1,28 @@
-PROG50102 Assignmnet 1 Submission
-Alessandro Profenna
-Sept. 25, 2019
+# Sheridan Lander
+## Lunar Lander Game
+
+Relevant code is located in the C# scripts under /Assets/Scripts/.
+
+This is a modern Unity 3D recreation of the classic 1979 Atari game, Lunar Lander: <br>
+https://www.youtube.com/watch?v=McAhSoAEbhM
+
+The goal of this game is safely land a lunar space craft on designated spots on the moon for points. The player must carefully balance the physics of the lander by rotating it left/right and applying a constant thrust force when needed, while also managing fuel consumption. If the lander collides with the moon's surface at an incorrect angle and/or high velocity, it will crash.
+
+The lander is a multi-part model, held together by Fixed Joints, which breaks a apart upon crashing. <br>
+For each game, the moon's surface mesh and landing platforms are randomly generated. <br>
+The camera will zoom in and focus on the lander when it lands or crashes.
+
 
 -----------------
 
-Some notes:
 
-To build the game, add the two scenes in Assets/Scenes in the Build Settings in this order:
-
-MainMenu
-MainGame
-
-Then delete the SampleScene that comes default with the new project.
-Then build as standalone.
-
-My implementation of the Sheridan Lander Game has all of the required features.
-Possible considerations for bonus points:
-
-1) Randomly generated mesh for the moon's surface (custom code in StageBuilder.cs)
-2) Camera zooms in on the lunar lander when you successfully land or crash (custom code in CameraController.cs)
-
-Thanks!
-
------------------
-
-Game information below:
-
-GAME LOOP:
+### Game Loop
 
 The player can keep landing on platforms until their fuel runs out. 
 Each time they land a platform successfully, the lander is placed back into the sky
-and the stage is randomly regenerated.
+and the stage is regenerated.
 
-CONTROLS:
+### Controls
 
 Click on the UI buttons to activate them.
 Control the lunar lander using the up, left, and right arrows.
@@ -41,7 +31,7 @@ ARROW LEFT/RIGHT = add torque to the lander
 
 Note: both types of lander movement consume fuel
 
-CRASHING:
+### Crashing
 
 The lander will crash instantly if any part of it other than its feet touch the moon's surface.
 The lander will also crash if it's feet touch the surface AND:
@@ -50,7 +40,7 @@ The lander will also crash if it's feet touch the surface AND:
 2) It's landing speed is greater than a specific threshold.
 3) It has ran out of fuel and lands on a part of the surface that has no platform.
 
-POINTS: 
+### Points
 
 Each platform is represented by a flat purple/white particle line on the moon's surface.
 3 or 4 are randomly placed with the generated moon surface.
@@ -64,6 +54,8 @@ The player will be awarded the points associated with a platform if:
 note: The player can till be awarded points even after their fuel runs out, if they are lucky enough to 
 have the lander fall on a platform successfully. 
 If this happens, they will get the points but the game will end (since they have no more fuel).
+
+Screenshots:
 
 ![Screenshot1](https://user-images.githubusercontent.com/15040875/72311665-7026d500-3653-11ea-9cbc-8c8350faa451.PNG)
 ![Screenshot2](https://user-images.githubusercontent.com/15040875/72311666-7026d500-3653-11ea-962f-a36232fca539.PNG)
